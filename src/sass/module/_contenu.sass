@@ -1,2 +1,49 @@
 #contenu h1
     display: flex
+    font-weight: 2px
+    letter-spacing: 2px
+    font-size: 50px
+    justify-content: center
+
+#contenu p
+    display: flex
+    line-height: 30px
+    margin-left: 6px
+    justify-content: center
+    @media screen and (min-width: $tab) and (max-width: $lap)
+        margin-left: 41px
+
+#contenu ul
+    line-height: 30px
+    margin-left: 130px
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        margin-left: 20px
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        margin-left: 20px
+
+#contenu ul > li::before
+    content: "\2022"
+    color: #B440B5
+    display: inline-block
+    width: 1em
+    margin-left: -1em
+    // @media screen and ( min-width: $mm) and (max-width: $ml)
+
+
+#contenu hr
+    display: flex
+    justify-content: center
+    width: 50px
+    border: solid #B440B5 1px
+
+#contenu h2
+    display: flex
+    font-size: 30px
+    justify-content: center
+    @media screen and (min-width: $mm) and (max-width: $ml)
+        font-size: 20px
+        margin-left: 55px
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        font-size: 20px
+        margin-left: 55px
+

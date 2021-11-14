@@ -1,24 +1,42 @@
 @import url('http://fonts.cdnfonts.com/css/geometria')
 
-* 
-  font-family: 'Geometria', sans-serif
-
-
+*
+    font-family: 'Geometria', sans-serif
 
 body, footer
     margin: 0
 
-#newsletter 
+#newsletter
     display: flex
     background-color: #B440B5
     height: 5vh
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        background-color: #B440B5
+        height: 5vh     
 
-#newsletter img 
+#newsletter img
     max-width: 8.5%
     justify-content: left
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        display: none
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        display: none
+    @media screen and ( min-width: $tab) and (max-width: $lap)
+        display: flex
+        max-width: 6.5%
+        justify-content: left
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        display: flex
+        max-width: 7%
+        justify-content: left
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        display: flex
+        max-width: 7%
+        justify-content: left
 
 #newsletter span
     color: white
+    
 
 #newsletter button
     border: none
@@ -31,12 +49,17 @@ body, footer
     align-items: center
     justify-content: space-between
     width: 100%
-        
-#champs_newsletter span,  
+    @media screen and (min-width: $mm) and (max-width: $ml)
+        display: none
+    @media screen and (min-width: $ml) and (max-width: $tab)
+        display: none
+
+#champs_newsletter span
     align-items: center
     color: white
     opacity: 34%
     justify-content: center
-    
+
 input:placeholder-shown
     font-style: italic
+

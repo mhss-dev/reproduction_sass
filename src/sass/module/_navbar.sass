@@ -1,14 +1,25 @@
 nav
-    display: flex
+    display: inline block
+    flex: flex-wrap
+    justify-content: space-around
     width: 100%
-    
+    text-decoration: none
+    @media screen and (min-width: $mm) and (max-width: $ml)
+        width: 20%
+        justify-content: start
+        text-decoration: none
+
+
 .logo_mg
     display: flex
     justify-content: center
     width: 170px
     border-right: 1px solid grey
     border-bottom: solid grey 1px
-
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        display: none
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        display: none
 
 .nav_content
     display: flex
@@ -18,10 +29,37 @@ nav
     border-bottom: solid grey 1px
     height: 95px
     border-right: solid grey 1px
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        justify-content: center
+        width: 365px
+        border-bottom: solid grey 1px
+        height: 30px
+        border-right: solid grey 1px
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        margin-left: 9px
+        font-size: 5.5px
+        width: 420px
+        height: 30px
+        border-right: solid grey 1px
+        border-bottom: solid grey 1px
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        margin-left: 9px
+        font-size: 5.5px
+        width: 100%
+        height: 30px
+        border-right: solid grey 1px
+        border-bottom: solid grey 1px
+
+
 
 .nav_text
     text-transform: uppercase
     font-size: 10px
     text-decoration: none
     margin-left: 1%
-    
+    @media screen and ( min-width: $mm) and (max-width: $ml)
+        margin-left: 6px
+        font-size: 6px
+    @media screen and ( min-width: $ml) and (max-width: $tab)
+        margin-left: -3px
+        font-size: 6px
